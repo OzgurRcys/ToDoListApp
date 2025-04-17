@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\safra\\source\\repos\\ToDo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|c:\\users\\safra\\source\\repos\\todo\\todo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|c:\\users\\safra\\source\\repos\\todo\\todo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|c:\\users\\safra\\source\\repos\\todo\\todo\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|c:\\users\\safra\\source\\repos\\todo\\todo\\converters\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\converters\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NullToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\Converters\\NullToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "ToDo\\Converters\\NullToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\Converters\\NullToVisibilityConverter.cs",
+              "RelativeToolTip": "ToDo\\Converters\\NullToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:48:35.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\TaskItem.cs",
+              "RelativeDocumentMoniker": "ToDo\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\TaskItem.cs",
+              "RelativeToolTip": "ToDo\\TaskItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T13:44:28.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ToDo\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\MainWindow.xaml",
+              "RelativeToolTip": "ToDo\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-17T13:39:10.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToDo\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\safra\\source\\repos\\ToDo\\ToDo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ToDo\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T13:39:09.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+﻿<Window x:Class="ToDo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ToDo"
+        xmlns:conv="clr-namespace:ToDo.Converters"
+        Title="To-Do Uygulaması" Height="500" Width="400"
+        Background="{DynamicResource WindowBackgroundBrush}">
+
+    <Window.Resources>
+        <conv:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+
+        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#2D2D30"/>
+        <SolidColorBrush x:Key="ControlBackgroundBrush" Color="#3C3C3C"/>
+        <SolidColorBrush x:Key="ControlForegroundBrush" Color="White"/>
+        <SolidColorBrush x:Key="CardBackgroundBrush" Color="#444444"/>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Placeholder TextBox -->
+        <Grid>
+            <TextBox x:Name="TaskTextBox" Height="30" Padding="5"
+                     Background="{DynamicResource ControlBackgroundBrush}"
+                     Foreground="{DynamicResource ControlForegroundBrush}"
+                     TextChanged="TaskTextBox_TextChanged"/>
+
+            <TextBlock x:Name="PlaceholderTextBlock"
+                       Text="Görev girin"
+                       Foreground="Gray"
+                       Margin="8,0,0,0"
+                       VerticalAlignment="Center"
+                       IsHitTestVisible="False"
+                       Visibility="Visible"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,10">
+            <DatePicker x:Name="DueDatePicker" Width="150" Margin="0,0,10,0"/>
+            <Grid Width="130">
+                <TextBox x:Name="DueTimeTextBox" Padding="5"
+                         Background="{DynamicResource ControlBackgroundBrush}"
+                         Foreground="{DynamicResource ControlForegroundBrush}"
+                         TextChanged="DueTimeTextBox_TextChanged"/>
+                <TextBlock x:Name="DueTimePlaceholder"
+                           Text="Saat girin 14:00"
+                           Foreground="Gray"
+                           Margin="8,0,0,0"
+                           VerticalAlignment="Center"
+                           IsHitTestVisible="False"
+                           Visibility="Visible"/>
+            </Grid>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Ekle" Height="30" Click="AddTask_Click"
+                Background="Green" Foreground="White"/>
+
+        <ListBox x:Name="TaskListBox" Grid.Row="3" Margin="0,10,0,0"
+                 Background="{DynamicResource CardBackgroundBrush}"
+                 Foreground="{DynamicResource ControlForegroundBrush}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="5" Padding="5" Background="{DynamicResource ControlBackgroundBrush}">
+                        <DockPanel>
+                            <StackPanel Orientation="Vertical" DockPanel.Dock="Left">
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding DueDateTime, StringFormat='Tarih: {0:dd.MM.yyyy HH:mm}'}"
+                                           Visibility="{Binding DueDateTime, Converter={StaticResource NullToVisibilityConverter}}"
+                                           FontSize="12"/>
+                            </StackPanel>
+                            <Button Content="Sil" Click="DeleteTask_Click" Tag="{Binding}" Width="50"
+                                    HorizontalAlignment="Right" Margin="10,0,0,0"
+                                    Background="DarkRed" Foreground="White"/>
+                        </DockPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
