@@ -1,0 +1,39 @@
+﻿<Window x:Class="ToDo.EditTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Görevi Düzenle" Height="200" Width="300"
+        WindowStartupLocation="CenterOwner"
+        Background="#2D2D30">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="NameTextBox" Grid.Row="0" Margin="0,0,0,10" 
+                 Padding="5" Background="#3C3C3C" Foreground="White"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <DatePicker x:Name="DueDatePicker" Width="130"/>
+            <Grid Width="100" Margin="10,0,0,0">
+                <TextBox x:Name="DueTimeTextBox" Padding="5"
+             Background="#3C3C3C" Foreground="White"
+             TextChanged="DueTimeTextBox_TextChanged"/>
+                <TextBlock x:Name="DueTimePlaceholder"
+               Text="14:00"
+               Foreground="Gray"
+               Margin="8,0,0,0"
+               VerticalAlignment="Center"
+               IsHitTestVisible="False"
+               Visibility="Visible"/>
+            </Grid>
+
+        </StackPanel>
+
+        <Button Content="Kaydet" Grid.Row="2" Height="30" 
+                HorizontalAlignment="Right" Width="100"
+                Background="Green" Foreground="White"
+                Click="SaveButton_Click"/>
+    </Grid>
+</Window>

@@ -60,25 +60,45 @@
                 Background="Green" Foreground="White"/>
 
         <ListBox x:Name="TaskListBox" Grid.Row="3" Margin="0,10,0,0"
-                 Background="{DynamicResource CardBackgroundBrush}"
-                 Foreground="{DynamicResource ControlForegroundBrush}">
+         Background="{DynamicResource CardBackgroundBrush}"
+         Foreground="{DynamicResource ControlForegroundBrush}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border Margin="5" Padding="5" Background="{DynamicResource ControlBackgroundBrush}">
                         <DockPanel>
+                            <CheckBox IsChecked="{Binding IsCompleted, Mode=TwoWay}" 
+                          Margin="0,0,10,0" VerticalAlignment="Center"/>
+
                             <StackPanel Orientation="Vertical" DockPanel.Dock="Left">
-                                <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="TextDecorations" Value="None"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsCompleted}" Value="True">
+                                                    <Setter Property="TextDecorations" Value="Strikethrough"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
                                 <TextBlock Text="{Binding DueDateTime, StringFormat='Tarih: {0:dd.MM.yyyy HH:mm}'}"
-                                           Visibility="{Binding DueDateTime, Converter={StaticResource NullToVisibilityConverter}}"
-                                           FontSize="12"/>
+                               Visibility="{Binding DueDateTime, Converter={StaticResource NullToVisibilityConverter}}"
+                               FontSize="12"/>
                             </StackPanel>
+
                             <Button Content="Sil" Click="DeleteTask_Click" Tag="{Binding}" Width="50"
-                                    HorizontalAlignment="Right" Margin="10,0,0,0"
-                                    Background="DarkRed" Foreground="White"/>
+                        HorizontalAlignment="Right" Margin="10,0,0,0"
+                        Background="DarkRed" Foreground="White"/>
+                            <Button Content="Düzenle" Click="EditTask_Click" Tag="{Binding}" 
+                         Width="60" Margin="0,0,5,0"/>
+
                         </DockPanel>
                     </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
+
         </ListBox>
+
     </Grid>
 </Window>

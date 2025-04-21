@@ -114,5 +114,20 @@ namespace ToDo
             SaveTasks();
             base.OnClosed(e);
         }
+        private void EditTask_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as FrameworkElement;
+            if (button?.Tag is TaskItem task)
+            {
+                var editWindow = new EditTaskWindow(task);
+                editWindow.Owner = this;
+
+                if (editWindow.ShowDialog() == true)
+                {
+                    
+                }
+            }
+        }
+
     }
 }

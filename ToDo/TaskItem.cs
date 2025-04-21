@@ -1,11 +1,48 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace ToDo
 {
-    public class TaskItem
+    public class TaskItem : INotifyPropertyChanged
     {
-        public string Name { get; set; }
-        public bool IsCompleted { get; set; }
-        public DateTime? DueDateTime { get; set; }
+        private string name;
+        private DateTime? dueDateTime;
+        private bool isCompleted;
+
+        public string Name
+        {
+            get => name;
+            set
+            {
+                name = value;
+                OnPropertyChanged(nameof(Name));
+            }
+        }
+
+        public DateTime? DueDateTime
+        {
+            get => dueDateTime;
+            set
+            {
+                dueDateTime = value;
+                OnPropertyChanged(nameof(DueDateTime));
+            }
+        }
+
+        public bool IsCompleted
+        {
+            get => isCompleted;
+            set
+            {
+                isCompleted = value;
+                OnPropertyChanged(nameof(IsCompleted));
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
+
