@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\edittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|c:\\users\\safra\\onedrive\\masa\u00FCst\u00FC\\todolistapp\\todo\\edittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|C:\\Users\\safra\\OneDrive\\Masa\u00FCst\u00FC\\ToDoListApp\\todo\\edittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\edittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|c:\\users\\safra\\onedrive\\masa\u00FCst\u00FC\\todolistapp\\todo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|C:\\Users\\safra\\OneDrive\\Masa\u00FCst\u00FC\\ToDoListApp\\todo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E43C9DB-2D3B-483A-86DD-5C390D98F23F}|ToDo\\ToDo.csproj|solutionrelative:todo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,8 +54,7 @@
               "RelativeToolTip": "ToDo\\EditTaskWindow.xaml.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA3wC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:53:29.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T07:53:29.456Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "ToDo\\Converters\\NullToVisibilityConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:48:35.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T14:48:35.496Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "ToDo\\TaskItem.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:44:28.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T13:44:28.407Z"
             },
             {
               "$type": "Document",
@@ -104,8 +101,7 @@
               "ToolTip": "C:\\Users\\safra\\OneDrive\\Masa\u00FCst\u00FC\\ToDoListApp\\ToDo\\MainWindow.xaml",
               "RelativeToolTip": "ToDo\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-17T13:39:10.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T13:39:10.041Z"
             },
             {
               "$type": "Document",
@@ -117,8 +113,7 @@
               "RelativeToolTip": "ToDo\\MainWindow.xaml.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAuwHQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T13:39:09.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T13:39:09.425Z"
             }
           ]
         }
